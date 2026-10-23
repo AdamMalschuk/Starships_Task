@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="f10488cb-7e03-49ad-b561-a447c95ab76c" name="Changes" comment="" />
+    <list default="true" id="f10488cb-7e03-49ad-b561-a447c95ab76c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/PythonProject2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PythonProject2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -9,6 +16,77 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "AdamMalschuk"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/AdamMalschuk/Starships_Task.git",
+    "accountId": "00f8ea68-0ba3-4b42-86c6-f1e9b115a7d6"
+  }
+}]]></component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.000000000000797" />
+      <entry key="S10" value="1.0000021121598746" />
+      <entry key="S30" value="1.0589149584591147" />
+      <entry key="S60" value="2.058868717233101" />
+      <entry key="M2" value="7.02489437434565" />
+      <entry key="M5" value="24.7779092200195" />
+      <entry key="M10" value="48.6019986975846" />
+      <entry key="M15" value="66.3301557671921" />
+      <entry key="M30" value="97.53802889509804" />
+      <entry key="H1" value="122.50245526559685" />
+      <entry key="H2" value="138.6466273793896" />
+      <entry key="H4" value="147.87866619950998" />
+      <entry key="D1" value="156.24724589187736" />
+      <entry key="W1" value="157.74793688514785" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="7.266695639817403E-121" />
+      <entry key="S2" value="9.232817317830841E-31" />
+      <entry key="S5" value="9.685759854378935E-13" />
+      <entry key="S10" value="9.841719033820928E-7" />
+      <entry key="S30" value="0.010157402109586077" />
+      <entry key="S60" value="0.11434102224432105" />
+      <entry key="M2" value="0.4462835327812412" />
+      <entry key="M5" value="1.2588657585016692" />
+      <entry key="M10" value="2.267027719495378" />
+      <entry key="M15" value="3.0942138510460624" />
+      <entry key="M30" value="4.679070032033407" />
+      <entry key="H1" value="6.021931462709163" />
+      <entry key="H2" value="6.91352532765563" />
+      <entry key="H4" value="7.429676575871829" />
+      <entry key="D1" value="7.900926670744222" />
+      <entry key="W1" value="7.985744682828554" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.9592641193252643" />
+      <entry key="MS500" value="0.9917167307382933" />
+      <entry key="S2" value="0.9979227189990506" />
+      <entry key="S5" value="0.9991685692147105" />
+      <entry key="S10" value="0.9995866944378264" />
+      <entry key="S30" value="1.0645399918358112" />
+      <entry key="S60" value="2.1403982315408827" />
+      <entry key="M2" value="7.393063566230854" />
+      <entry key="M5" value="25.930950660054982" />
+      <entry key="M10" value="50.77407178946629" />
+      <entry key="M15" value="69.34295964307297" />
+      <entry key="M30" value="102.16214148894265" />
+      <entry key="H1" value="128.491690631904" />
+      <entry key="H2" value="145.54219504010345" />
+      <entry key="H4" value="155.29891460547472" />
+      <entry key="D1" value="164.14653431450222" />
+      <entry key="W1" value="165.73344583241132" />
+    </decayedShown>
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 8,
@@ -22,12 +100,19 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
     "git-widget-placeholder": "master",
     "junie.onboarding.icon.badge.shown": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "python.packages.toolwindow.project.migrated.to.right.top.v2": "true",
     "to.speed.mode.migration.done": "true"
   }
@@ -46,11 +131,14 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1792763552505</updated>
-      <workItem from="1792763553537" duration="1000" />
+      <workItem from="1792763553537" duration="2780000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/PythonProject2$main.coverage" NAME="main Coverage Results" MODIFIED="1792766319864" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
