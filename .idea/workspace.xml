@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f10488cb-7e03-49ad-b561-a447c95ab76c" name="Changes" comment="fixed for loop comment mistake">
-      <change afterPath="$PROJECT_DIR$/mainTest.py" afterDir="false" />
+    <list default="true" id="f10488cb-7e03-49ad-b561-a447c95ab76c" name="Changes" comment="refactored to extract complex logic into funtion &amp; created unit tests">
+      <change afterPath="$PROJECT_DIR$/query_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,60 +38,60 @@
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
       <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0000000001971483" />
-      <entry key="S2" value="1.0038060611117996" />
-      <entry key="S5" value="1.12735418343797" />
-      <entry key="S10" value="1.4697301107554097" />
-      <entry key="S30" value="2.2206653532995584" />
-      <entry key="S60" value="2.906370478581104" />
-      <entry key="M2" value="5.3903987005238605" />
-      <entry key="M5" value="15.673333370395575" />
-      <entry key="M10" value="31.355934566465766" />
-      <entry key="M15" value="43.21958862119397" />
-      <entry key="M30" value="74.17491731503011" />
-      <entry key="H1" value="135.71050129313954" />
-      <entry key="H2" value="215.66704002601773" />
-      <entry key="H4" value="283.7124865840815" />
-      <entry key="D1" value="363.7071859286334" />
-      <entry key="W1" value="380.1675417578855" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0000000014609074" />
+      <entry key="S5" value="1.0002957961031105" />
+      <entry key="S10" value="1.0197197196450796" />
+      <entry key="S30" value="1.547484821069316" />
+      <entry key="S60" value="2.7709454724421936" />
+      <entry key="M2" value="5.567054391560999" />
+      <entry key="M5" value="15.161459002292721" />
+      <entry key="M10" value="32.888346698058925" />
+      <entry key="M15" value="50.68106935503759" />
+      <entry key="M30" value="96.71258518184413" />
+      <entry key="H1" value="171.48595181912518" />
+      <entry key="H2" value="269.4203361182008" />
+      <entry key="H4" value="358.2812381124949" />
+      <entry key="D1" value="469.2514590269491" />
+      <entry key="W1" value="492.90314469287256" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="0.0" />
-      <entry key="S2" value="6.712202021764914E-149" />
-      <entry key="S5" value="5.37955073467122E-60" />
-      <entry key="S10" value="2.3193861672053865E-30" />
-      <entry key="S30" value="1.3343446075729746E-10" />
-      <entry key="S60" value="1.3094161462395864E-5" />
-      <entry key="M2" value="0.005685572357799356" />
-      <entry key="M5" value="0.33027917617879127" />
-      <entry key="M10" value="1.4597909422702036" />
-      <entry key="M15" value="2.4477503186317873" />
-      <entry key="M30" value="4.369891501028248" />
-      <entry key="H1" value="6.772333397805834" />
-      <entry key="H2" value="9.472375763373138" />
-      <entry key="H4" value="11.717699504659638" />
-      <entry key="D1" value="14.360097924486682" />
-      <entry key="W1" value="14.905975597929741" />
+      <entry key="MS100" value="1.0764923212315742E-190" />
+      <entry key="MS500" value="1.014850773945628E-38" />
+      <entry key="S2" value="3.1739534048421947E-10" />
+      <entry key="S5" value="1.5872312985348226E-4" />
+      <entry key="S10" value="0.012598538730064123" />
+      <entry key="S30" value="0.23392971462424567" />
+      <entry key="S60" value="0.5176266043442761" />
+      <entry key="M2" value="0.8851104883145959" />
+      <entry key="M5" value="1.5514625018337915" />
+      <entry key="M10" value="2.6507840708116985" />
+      <entry key="M15" value="3.7995558391376454" />
+      <entry key="M30" value="6.699460019275958" />
+      <entry key="H1" value="10.471754607772027" />
+      <entry key="H2" value="14.526800245476071" />
+      <entry key="H4" value="17.913919042520924" />
+      <entry key="D1" value="21.993721694009697" />
+      <entry key="W1" value="22.851676706710407" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9138314502294005" />
-      <entry key="MS500" value="0.982139595456215" />
-      <entry key="S2" value="0.9992897122225577" />
-      <entry key="S5" value="1.1252742685325914" />
-      <entry key="S10" value="1.46831863909264" />
-      <entry key="S30" value="2.2198073168460306" />
-      <entry key="S60" value="2.9032435625327437" />
-      <entry key="M2" value="5.383857658134723" />
-      <entry key="M5" value="15.975125421425519" />
-      <entry key="M10" value="32.781869703165015" />
-      <entry key="M15" value="45.6349912921729" />
-      <entry key="M30" value="78.51796285252442" />
-      <entry key="H1" value="142.46037966710472" />
-      <entry key="H2" value="225.12243419812953" />
-      <entry key="H4" value="295.4192325129023" />
-      <entry key="D1" value="378.06497224012844" />
-      <entry key="W1" value="395.0731727775187" />
+      <entry key="MS100" value="0.8467453123625271" />
+      <entry key="MS500" value="0.9672763296139321" />
+      <entry key="S2" value="0.9917167322141923" />
+      <entry key="S5" value="0.997079432065011" />
+      <entry key="S10" value="1.0285033562328219" />
+      <entry key="S30" value="1.7669744278688053" />
+      <entry key="S60" value="3.27016062645154" />
+      <entry key="M2" value="6.429527194108932" />
+      <entry key="M5" value="16.685415378968365" />
+      <entry key="M10" value="35.50704401221395" />
+      <entry key="M15" value="54.446683904998444" />
+      <entry key="M30" value="103.37912785431325" />
+      <entry key="H1" value="181.9293574624373" />
+      <entry key="H2" value="283.92556606386665" />
+      <entry key="H4" value="376.1810618991104" />
+      <entry key="D1" value="491.24214450714675" />
+      <entry key="W1" value="515.754366737961" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -109,7 +108,11 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Python tests.Python tests for mainTest.GetAndSetPilotsTest.executor": "Run",
     "Python tests.Python tests for mainTest.GetAndSetPilotsTest.test_something.executor": "Run",
+    "Python tests.Python tests for querry_test.QuerryTest.executor": "Run",
+    "Python tests.Python tests for query_test.QueryTest2.test_correct_referencing.executor": "Run",
     "Python tests.Python tests in mainTest.py.executor": "Run",
+    "Python tests.Python tests in querry_test.py.executor": "Run",
+    "Python tests.Python tests in query_test.py.executor": "Run",
     "Python.main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -119,8 +122,10 @@
     "git-widget-placeholder": "master",
     "junie.onboarding.icon.badge.shown": "true",
     "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.jshint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.jshint": "",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "python.packages.toolwindow.project.migrated.to.right.top.v2": "true",
@@ -162,8 +167,44 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests for query_test.QuerryTest" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="PythonProject2" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <option name="RUN_TOOL" value="" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;query_test.QuerryTest&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for query_test.QueryTest2.test_correct_referencing" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="PythonProject2" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <option name="RUN_TOOL" value="" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;query_test.QueryTest2.test_correct_referencing&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for query_test.QueryTest2.test_correct_referencing" />
+        <item itemvalue="Python tests.Python tests for query_test.QuerryTest" />
         <item itemvalue="Python tests.Python tests for mainTest.GetAndSetPilotsTest" />
         <item itemvalue="Python tests.Python tests for mainTest.GetAndSetPilotsTest.test_something" />
       </list>
@@ -209,7 +250,15 @@
       <option name="project" value="LOCAL" />
       <updated>1793007570324</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="refactored to extract complex logic into funtion &amp; created unit tests">
+      <option name="closed" value="true" />
+      <created>1793014724014</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1793014724014</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -219,7 +268,8 @@
     <MESSAGE value="completed assignment" />
     <MESSAGE value="added comments" />
     <MESSAGE value="fixed for loop comment mistake" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed for loop comment mistake" />
+    <MESSAGE value="refactored to extract complex logic into funtion &amp; created unit tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactored to extract complex logic into funtion &amp; created unit tests" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PythonProject2$main.coverage" NAME="main Coverage Results" MODIFIED="1792766319864" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
