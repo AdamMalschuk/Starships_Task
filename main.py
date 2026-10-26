@@ -33,7 +33,7 @@ while x:
                     print("    pilot added:" + response.json()["name"])
                 ship["pilots"] = pilots
             shipList.append(ship)
-    #if the page being accessed doesn't exist then it ends the for loop
+    #if the page being accessed doesn't exist then it ends the while loop
     except:
         x=False
     #displays the end of the page and creates the string to add to get the next page
