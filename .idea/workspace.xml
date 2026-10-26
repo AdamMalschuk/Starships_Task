@@ -4,92 +4,101 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f10488cb-7e03-49ad-b561-a447c95ab76c" name="Changes" comment="added comments">
+    <list default="true" id="f10488cb-7e03-49ad-b561-a447c95ab76c" name="Changes" comment="fixed for loop comment mistake">
+      <change afterPath="$PROJECT_DIR$/mainTest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Unit Test" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "AdamMalschuk"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;AdamMalschuk&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/AdamMalschuk/Starships_Task.git",
-    "accountId": "00f8ea68-0ba3-4b42-86c6-f1e9b115a7d6"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/AdamMalschuk/Starships_Task.git&quot;,
+    &quot;accountId&quot;: &quot;00f8ea68-0ba3-4b42-86c6-f1e9b115a7d6&quot;
   }
-}]]></component>
+}</component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0177183040262079" />
-      <entry key="MS500" value="1.6775217482822056" />
-      <entry key="S2" value="2.95886762149251" />
-      <entry key="S5" value="3.5677332182301735" />
-      <entry key="S10" value="4.515280041363278" />
-      <entry key="S30" value="11.386746393671757" />
-      <entry key="S60" value="24.49919475619345" />
-      <entry key="M2" value="47.9777237363994" />
-      <entry key="M5" value="89.45242389381772" />
-      <entry key="M10" value="127.66069587252358" />
-      <entry key="M15" value="152.87969049874906" />
-      <entry key="M30" value="195.98213293576683" />
-      <entry key="H1" value="230.65449497108608" />
-      <entry key="H2" value="253.38159511693726" />
-      <entry key="H4" value="266.50392119408855" />
-      <entry key="D1" value="278.48134697347723" />
-      <entry key="W1" value="280.63757813436797" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0000000001971483" />
+      <entry key="S2" value="1.0038060611117996" />
+      <entry key="S5" value="1.12735418343797" />
+      <entry key="S10" value="1.4697301107554097" />
+      <entry key="S30" value="2.2206653532995584" />
+      <entry key="S60" value="2.906370478581104" />
+      <entry key="M2" value="5.3903987005238605" />
+      <entry key="M5" value="15.673333370395575" />
+      <entry key="M10" value="31.355934566465766" />
+      <entry key="M15" value="43.21958862119397" />
+      <entry key="M30" value="74.17491731503011" />
+      <entry key="H1" value="135.71050129313954" />
+      <entry key="H2" value="215.66704002601773" />
+      <entry key="H4" value="283.7124865840815" />
+      <entry key="D1" value="363.7071859286334" />
+      <entry key="W1" value="380.1675417578855" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
       <entry key="MS500" value="0.0" />
-      <entry key="S2" value="4.671252687849282E-100" />
-      <entry key="S5" value="1.852564528866635E-40" />
-      <entry key="S10" value="1.3611023570140847E-20" />
-      <entry key="S30" value="2.438124733100735E-7" />
-      <entry key="S60" value="5.601943288275022E-4" />
-      <entry key="M2" value="0.03123770943754175" />
-      <entry key="M5" value="0.434516975805327" />
-      <entry key="M10" value="1.3318965504227909" />
-      <entry key="M15" value="2.1704982251072185" />
-      <entry key="M30" value="3.9188992633997337" />
-      <entry key="H1" value="5.511097388560653" />
-      <entry key="H2" value="6.613794503379127" />
-      <entry key="H4" value="7.266837991653656" />
-      <entry key="D1" value="7.871798331154632" />
-      <entry key="W1" value="7.981532159717724" />
+      <entry key="S2" value="6.712202021764914E-149" />
+      <entry key="S5" value="5.37955073467122E-60" />
+      <entry key="S10" value="2.3193861672053865E-30" />
+      <entry key="S30" value="1.3343446075729746E-10" />
+      <entry key="S60" value="1.3094161462395864E-5" />
+      <entry key="M2" value="0.005685572357799356" />
+      <entry key="M5" value="0.33027917617879127" />
+      <entry key="M10" value="1.4597909422702036" />
+      <entry key="M15" value="2.4477503186317873" />
+      <entry key="M30" value="4.369891501028248" />
+      <entry key="H1" value="6.772333397805834" />
+      <entry key="H2" value="9.472375763373138" />
+      <entry key="H4" value="11.717699504659638" />
+      <entry key="D1" value="14.360097924486682" />
+      <entry key="W1" value="14.905975597929741" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9766149724211516" />
-      <entry key="MS500" value="1.6653820630254008" />
-      <entry key="S2" value="2.953396334933299" />
-      <entry key="S5" value="3.5650489382535793" />
-      <entry key="S10" value="4.513563789434625" />
-      <entry key="S30" value="11.385283460613783" />
-      <entry key="S60" value="24.498007649645306" />
-      <entry key="M2" value="48.001934743887745" />
-      <entry key="M5" value="89.84933924240528" />
-      <entry key="M10" value="128.93614484534152" />
-      <entry key="M15" value="154.99260855249358" />
-      <entry key="M30" value="199.85474847536022" />
-      <entry key="H1" value="236.13553761956462" />
-      <entry key="H2" value="259.9781431346268" />
-      <entry key="H4" value="273.76150365765545" />
-      <entry key="D1" value="286.3515073851611" />
-      <entry key="W1" value="288.6188738659034" />
+      <entry key="MS100" value="0.9138314502294005" />
+      <entry key="MS500" value="0.982139595456215" />
+      <entry key="S2" value="0.9992897122225577" />
+      <entry key="S5" value="1.1252742685325914" />
+      <entry key="S10" value="1.46831863909264" />
+      <entry key="S30" value="2.2198073168460306" />
+      <entry key="S60" value="2.9032435625327437" />
+      <entry key="M2" value="5.383857658134723" />
+      <entry key="M5" value="15.975125421425519" />
+      <entry key="M10" value="32.781869703165015" />
+      <entry key="M15" value="45.6349912921729" />
+      <entry key="M30" value="78.51796285252442" />
+      <entry key="H1" value="142.46037966710472" />
+      <entry key="H2" value="225.12243419812953" />
+      <entry key="H4" value="295.4192325129023" />
+      <entry key="D1" value="378.06497224012844" />
+      <entry key="W1" value="395.0731727775187" />
     </decayedShown>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8,
-  "fromUser": false
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8,
+  &quot;fromUser&quot;: false
+}</component>
   <component name="ProjectId" id="3L69Fz6nQqDPVe9r0ELSK1ye1nf" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -98,6 +107,9 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python tests.Python tests for mainTest.GetAndSetPilotsTest.executor": "Run",
+    "Python tests.Python tests for mainTest.GetAndSetPilotsTest.test_something.executor": "Run",
+    "Python tests.Python tests in mainTest.py.executor": "Run",
     "Python.main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -115,6 +127,48 @@
     "to.speed.mode.migration.done": "true"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="Python tests for mainTest.GetAndSetPilotsTest" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="PythonProject2" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <option name="RUN_TOOL" value="" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;mainTest.GetAndSetPilotsTest&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for mainTest.GetAndSetPilotsTest.test_something" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="PythonProject2" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <option name="RUN_TOOL" value="" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;mainTest.GetAndSetPilotsTest.test_something&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.Python tests for mainTest.GetAndSetPilotsTest" />
+        <item itemvalue="Python tests.Python tests for mainTest.GetAndSetPilotsTest.test_something" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -147,7 +201,15 @@
       <option name="project" value="LOCAL" />
       <updated>1792766777487</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="fixed for loop comment mistake">
+      <option name="closed" value="true" />
+      <created>1793007570324</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1793007570324</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,7 +218,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="completed assignment" />
     <MESSAGE value="added comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="added comments" />
+    <MESSAGE value="fixed for loop comment mistake" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed for loop comment mistake" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PythonProject2$main.coverage" NAME="main Coverage Results" MODIFIED="1792766319864" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

@@ -7,11 +7,28 @@ def request(URI):
 def connect():
     client = pm.MongoClient("mongodb://localhost:27017/")
     return(client["starwars"])
+
+def getAndSetPilots(ship,db):
+    pilots = []
+    for pilot in ship["pilots"]:
+        # follows the pilot link
+        response = request(pilot)
+        # searches for the pilot in the mongo database
+        temp = db.characters.find_one({"name": response.json()["name"]}, {"_id": 1})
+        pilots.append(temp["_id"])
+        # shows the pilot added with some indentation for easier reading
+        print("    pilot added:" + response.json()["name"])
+    ship["pilots"] = pilots
+    return(ship)
 db = connect()
+#makes the script stateless
+db.starships.delete_many({})
+count = 0
+shipList = []
 #holds while loop open
 x = True
 #count for adding into request for different pages
-count = 0
+count = 1
 #i set to empty string for first pass to access page 1
 i = ""
 #declaring the ship list to populated with the results of the API
@@ -22,16 +39,7 @@ while x:
         for ship in request("https://swapi.dev/api/starships"+i).json()["results"]:
             print(ship["name"])
             if ship["pilots"] is not None:
-                pilots = []
-                for pilot in ship["pilots"]:
-                    #follows the pilot link
-                    response = request(pilot)
-                    #searches for the pilot in the mongo database
-                    temp = db.characters.find_one({"name": response.json()["name"]},{"_id":1})
-                    pilots.append(temp["_id"])
-                    #shows the pilot added with some indentation for easier reading
-                    print("    pilot added:" + response.json()["name"])
-                ship["pilots"] = pilots
+                ship = getAndSetPilots(ship,db)
             shipList.append(ship)
     #if the page being accessed doesn't exist then it ends the while loop
     except:
