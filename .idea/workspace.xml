@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f10488cb-7e03-49ad-b561-a447c95ab76c" name="Changes" comment="refactored to extract complex logic into funtion &amp; created unit tests">
-      <change afterPath="$PROJECT_DIR$/query_test.py" afterDir="false" />
+    <list default="true" id="f10488cb-7e03-49ad-b561-a447c95ab76c" name="Changes" comment="added querry test to check referencing">
+      <change afterPath="$PROJECT_DIR$/queryTest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/PythonProject2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Starships_ETL.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mainTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/mainTest.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,59 +43,59 @@
     <decayedCancelled>
       <entry key="MS100" value="1.0" />
       <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0000000014609074" />
-      <entry key="S5" value="1.0002957961031105" />
-      <entry key="S10" value="1.0197197196450796" />
-      <entry key="S30" value="1.547484821069316" />
-      <entry key="S60" value="2.7709454724421936" />
-      <entry key="M2" value="5.567054391560999" />
-      <entry key="M5" value="15.161459002292721" />
-      <entry key="M10" value="32.888346698058925" />
-      <entry key="M15" value="50.68106935503759" />
-      <entry key="M30" value="96.71258518184413" />
-      <entry key="H1" value="171.48595181912518" />
-      <entry key="H2" value="269.4203361182008" />
-      <entry key="H4" value="358.2812381124949" />
-      <entry key="D1" value="469.2514590269491" />
-      <entry key="W1" value="492.90314469287256" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0" />
+      <entry key="S10" value="1.0" />
+      <entry key="S30" value="1.0" />
+      <entry key="S60" value="1.0" />
+      <entry key="M2" value="1.000000000000001" />
+      <entry key="M5" value="1.0000076835893352" />
+      <entry key="M10" value="1.0230030719532865" />
+      <entry key="M15" value="1.3973929059595096" />
+      <entry key="M30" value="9.606506452680593" />
+      <entry key="H1" value="52.52140792071082" />
+      <entry key="H2" value="149.95667105914052" />
+      <entry key="H4" value="270.12489844880986" />
+      <entry key="D1" value="456.58002610213214" />
+      <entry key="W1" value="501.12088287005963" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="1.0764923212315742E-190" />
-      <entry key="MS500" value="1.014850773945628E-38" />
-      <entry key="S2" value="3.1739534048421947E-10" />
-      <entry key="S5" value="1.5872312985348226E-4" />
-      <entry key="S10" value="0.012598538730064123" />
-      <entry key="S30" value="0.23392971462424567" />
-      <entry key="S60" value="0.5176266043442761" />
-      <entry key="M2" value="0.8851104883145959" />
-      <entry key="M5" value="1.5514625018337915" />
-      <entry key="M10" value="2.6507840708116985" />
-      <entry key="M15" value="3.7995558391376454" />
-      <entry key="M30" value="6.699460019275958" />
-      <entry key="H1" value="10.471754607772027" />
-      <entry key="H2" value="14.526800245476071" />
-      <entry key="H4" value="17.913919042520924" />
-      <entry key="D1" value="21.993721694009697" />
-      <entry key="W1" value="22.851676706710407" />
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="1.2929076205116738E-200" />
+      <entry key="S30" value="2.3595788657099692E-67" />
+      <entry key="S60" value="5.198656744219618E-34" />
+      <entry key="M2" value="2.805012259432721E-17" />
+      <entry key="M5" value="3.900463282769255E-7" />
+      <entry key="M10" value="0.0013291126989723153" />
+      <entry key="M15" value="0.023980476123438465" />
+      <entry key="M30" value="0.5322335958869334" />
+      <entry key="H1" value="2.951553767824706" />
+      <entry key="H2" value="7.712329677045133" />
+      <entry key="H4" value="13.052641736357145" />
+      <entry key="D1" value="20.863317168689672" />
+      <entry key="W1" value="22.680072980669905" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.8467453123625271" />
-      <entry key="MS500" value="0.9672763296139321" />
-      <entry key="S2" value="0.9917167322141923" />
-      <entry key="S5" value="0.997079432065011" />
-      <entry key="S10" value="1.0285033562328219" />
-      <entry key="S30" value="1.7669744278688053" />
-      <entry key="S60" value="3.27016062645154" />
-      <entry key="M2" value="6.429527194108932" />
-      <entry key="M5" value="16.685415378968365" />
-      <entry key="M10" value="35.50704401221395" />
-      <entry key="M15" value="54.446683904998444" />
-      <entry key="M30" value="103.37912785431325" />
-      <entry key="H1" value="181.9293574624373" />
-      <entry key="H2" value="283.92556606386665" />
-      <entry key="H4" value="376.1810618991104" />
-      <entry key="D1" value="491.24214450714675" />
-      <entry key="W1" value="515.754366737961" />
+      <entry key="MS100" value="0.9526379980439373" />
+      <entry key="MS500" value="0.9903428719330246" />
+      <entry key="S2" value="0.9975769252644544" />
+      <entry key="S5" value="0.9990300646389034" />
+      <entry key="S10" value="0.9995149146655609" />
+      <entry key="S30" value="0.9998382787361629" />
+      <entry key="S60" value="0.9999191360985962" />
+      <entry key="M2" value="0.9999595672318948" />
+      <entry key="M5" value="0.9999918933555634" />
+      <entry key="M10" value="1.0243079583738488" />
+      <entry key="M15" value="1.4211533695885523" />
+      <entry key="M30" value="10.13611985821678" />
+      <entry key="H1" value="55.46496580681091" />
+      <entry key="H2" value="157.65754447580358" />
+      <entry key="H4" value="283.1672669894331" />
+      <entry key="D1" value="477.4404624883539" />
+      <entry key="W1" value="523.8005045111602" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -108,6 +112,7 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Python tests.Python tests for mainTest.GetAndSetPilotsTest.executor": "Run",
     "Python tests.Python tests for mainTest.GetAndSetPilotsTest.test_something.executor": "Run",
+    "Python tests.Python tests for mainTest.RequestTestSad.executor": "Run",
     "Python tests.Python tests for querry_test.QuerryTest.executor": "Run",
     "Python tests.Python tests for query_test.QueryTest2.test_correct_referencing.executor": "Run",
     "Python tests.Python tests in mainTest.py.executor": "Run",
@@ -129,12 +134,89 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "python.packages.toolwindow.project.migrated.to.right.top.v2": "true",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "to.speed.mode.migration.done": "true"
   }
 }]]></component>
   <component name="RunManager">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="Starships_ETL" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <module name="Starships_ETL" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <option name="RUN_TOOL" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docs" factoryName="Docutils task">
+      <module name="Starships_ETL" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <option name="RUN_TOOL" value="" />
+      <option name="docutils_input_file" value="" />
+      <option name="docutils_output_file" value="" />
+      <option name="docutils_params" value="" />
+      <option name="docutils_task" value="" />
+      <option name="docutils_open_in_browser" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docs" factoryName="Sphinx task">
+      <module name="Starships_ETL" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <option name="RUN_TOOL" value="" />
+      <option name="docutils_input_file" value="" />
+      <option name="docutils_output_file" value="" />
+      <option name="docutils_params" value="" />
+      <option name="docutils_task" value="" />
+      <option name="docutils_open_in_browser" value="false" />
+      <method v="2" />
+    </configuration>
     <configuration name="Python tests for mainTest.GetAndSetPilotsTest" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="PythonProject2" />
+      <module name="Starships_ETL" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -151,7 +233,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Python tests for mainTest.GetAndSetPilotsTest.test_something" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="PythonProject2" />
+      <module name="Starships_ETL" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -167,8 +249,8 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for query_test.QuerryTest" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="PythonProject2" />
+    <configuration name="Python tests for mainTest.RequestTestSad" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="Starships_ETL" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -180,12 +262,12 @@
       <option name="DEBUG_JUST_MY_CODE" value="false" />
       <option name="RUN_TOOL" value="" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;query_test.QuerryTest&quot;" />
+      <option name="_new_target" value="&quot;mainTest.RequestTestSad&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for query_test.QueryTest2.test_correct_referencing" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="PythonProject2" />
+    <configuration name="Python tests for queryTest" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="Starships_ETL" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -197,14 +279,70 @@
       <option name="DEBUG_JUST_MY_CODE" value="false" />
       <option name="RUN_TOOL" value="" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;query_test.QueryTest2.test_correct_referencing&quot;" />
+      <option name="_new_target" value="&quot;queryTest&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for queryTest.QueryTest2.test_correct_referencing" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="Starships_ETL" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <option name="RUN_TOOL" value="" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;queryTest.QueryTest2.test_correct_referencing&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Autodetect">
+      <module name="Starships_ETL" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <option name="RUN_TOOL" value="" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <module name="Starships_ETL" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for query_test.QueryTest2.test_correct_referencing" />
-        <item itemvalue="Python tests.Python tests for query_test.QuerryTest" />
+        <item itemvalue="Python tests.Python tests for mainTest.RequestTestSad" />
+        <item itemvalue="Python tests.Python tests for queryTest.QueryTest2.test_correct_referencing" />
+        <item itemvalue="Python tests.Python tests for queryTest" />
         <item itemvalue="Python tests.Python tests for mainTest.GetAndSetPilotsTest" />
         <item itemvalue="Python tests.Python tests for mainTest.GetAndSetPilotsTest.test_something" />
       </list>
@@ -258,7 +396,15 @@
       <option name="project" value="LOCAL" />
       <updated>1793014724014</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="added querry test to check referencing">
+      <option name="closed" value="true" />
+      <created>1793017140903</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1793017140903</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -269,7 +415,8 @@
     <MESSAGE value="added comments" />
     <MESSAGE value="fixed for loop comment mistake" />
     <MESSAGE value="refactored to extract complex logic into funtion &amp; created unit tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactored to extract complex logic into funtion &amp; created unit tests" />
+    <MESSAGE value="added querry test to check referencing" />
+    <option name="LAST_COMMIT_MESSAGE" value="added querry test to check referencing" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PythonProject2$main.coverage" NAME="main Coverage Results" MODIFIED="1792766319864" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

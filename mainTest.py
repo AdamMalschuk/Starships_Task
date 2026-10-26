@@ -47,3 +47,4 @@ class GetAndSetPilotsTest(unittest.TestCase):
         collection = db["characters"]
         collection.insert_one({"name":"Boba Fett","_id":"1"})
         self.assertEqual(main.getAndSetPilots(ship,db)["pilots"][0], "1")
+        client.close()

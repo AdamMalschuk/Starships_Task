@@ -50,3 +50,4 @@ while x:
         count += 1
         i = "/?page=" + str(count)
 db.starships.insert_many(shipList)
+pm.MongoClient("mongodb://localhost:27017/").close()
